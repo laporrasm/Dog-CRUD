@@ -149,7 +149,8 @@ function createListItem(itemObj) {
 					crud.appendChild(newItem);
 
 					localStorage.setItem(itemObj.id, JSON.stringify(updatedItem));
-				}
+				},
+				() => null
 			).openModal();
 		});
 
